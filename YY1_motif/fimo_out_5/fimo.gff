@@ -1,0 +1,8 @@
+##gff-version 3
+range=chr7	fimo	nucleotide_motif	100861402	100861417	44.3	+	.	Name=UP00088_1;ID=UP00088_1-1-range=chr7;pvalue=3.74e-05;qvalue= 1;sequence=GTGATGGCGCCCCTAC;
+range=chr9	fimo	nucleotide_motif	131495633	131495648	41.2	-	.	Name=UP00088_1;ID=UP00088_1-1-range=chr9;pvalue=7.58e-05;qvalue= 1;sequence=TAGCGGGCGCCCTCTG;
+range=chr16	fimo	nucleotide_motif	30583255	30583270	44.3	+	.	Name=UP00088_1;ID=UP00088_1-1-range=chr16;pvalue=3.7e-05;qvalue= 1;sequence=TTAAGGGCGCCATTAT;
+range=chr17	fimo	nucleotide_motif	47865917	47865932	40.3	-	.	Name=UP00088_1;ID=UP00088_1-1-range=chr17;pvalue=9.24e-05;qvalue= 1;sequence=TAGTGGGCGCCATTTT;
+range=chr19	fimo	nucleotide_motif	507443	507458	40.4	+	.	Name=UP00088_1;ID=UP00088_1-1-range=chr19;pvalue=9.04e-05;qvalue= 1;sequence=TTGGGGGGGCTCTAGC;
+range=chr19	fimo	nucleotide_motif	39390444	39390459	41.8	+	.	Name=UP00088_1;ID=UP00088_1-1-range=chr19;pvalue=6.58e-05;qvalue= 1;sequence=TAAAGGGCGCCCGGAA;
+range=chr19	fimo	nucleotide_motif	39390444	39390459	41.3	-	.	Name=UP00088_1;ID=UP00088_1-2-range=chr19;pvalue=7.41e-05;qvalue= 1;sequence=TTCCGGGCGCCCTTTA;

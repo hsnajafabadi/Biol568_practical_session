@@ -1,0 +1,1137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<pattern-file>db/EUKARYOTE/jolma2013.meme</pattern-file>
+<sequence-file>./sequences.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="NEUROD2_full" name="NEUROD2_full">
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="10535127" stop="10535118" score="11.0103" pvalue="8.32e-05">
+<sequence>GCCGTATGCT</sequence>
+<mem:qvalue>1</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="45965888" stop="45965879" score="11.2784" pvalue="7.03e-05">
+<sequence>ACCATATTGC</sequence>
+<mem:qvalue>1</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+<matched-element start="75873858" stop="75873867" score="14.9588" pvalue="2.62e-06">
+<sequence>GCCATATGGT</sequence>
+<mem:qvalue>0.432</mem:qvalue>
+</matched-element>
+<matched-element start="75873867" stop="75873858" score="14.4021" pvalue="4.51e-06">
+<sequence>ACCATATGGC</sequence>
+<mem:qvalue>0.432</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr4" name="range=chr4">
+</scanned-sequence>
+<scanned-sequence accession="range=chr4" name="range=chr4">
+</scanned-sequence>
+<scanned-sequence accession="range=chr4" name="range=chr4">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+<matched-element start="137514230" stop="137514221" score="12.5052" pvalue="2.45e-05">
+<sequence>ACCATATTTT</sequence>
+<mem:qvalue>0.907</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+<matched-element start="33290781" stop="33290790" score="11.8351" pvalue="4.26e-05">
+<sequence>GCCATATTGT</sequence>
+<mem:qvalue>0.907</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+<matched-element start="73071117" stop="73071126" score="11.8351" pvalue="4.26e-05">
+<sequence>GCCATATTGT</sequence>
+<mem:qvalue>0.907</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrY" name="range=chrY">
+</scanned-sequence>
+<scanned-sequence accession="range=chrY" name="range=chrY">
+</scanned-sequence>
+<scanned-sequence accession="range=chrY" name="range=chrY">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr13" name="range=chr13">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+<matched-element start="100706254" stop="100706245" score="11.2887" pvalue="6.89e-05">
+<sequence>ACCACATGGT</sequence>
+<mem:qvalue>1</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+<matched-element start="30583225" stop="30583216" score="12.1649" pvalue="3.47e-05">
+<sequence>GCCATATTTT</sequence>
+<mem:qvalue>0.907</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+<matched-element start="78518653" stop="78518644" score="10.9381" pvalue="8.93e-05">
+<sequence>GCCATATTGC</sequence>
+<mem:qvalue>1</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr18" name="range=chr18">
+</scanned-sequence>
+<scanned-sequence accession="range=chr18" name="range=chr18">
+</scanned-sequence>
+<scanned-sequence accession="range=chr18" name="range=chr18">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+<matched-element start="3762081" stop="3762090" score="11.8351" pvalue="4.26e-05">
+<sequence>GCCATATTGT</sequence>
+<mem:qvalue>0.907</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr21" name="range=chr21">
+</scanned-sequence>
+<scanned-sequence accession="range=chr21" name="range=chr21">
+<matched-element start="9827035" stop="9827026" score="12.5361" pvalue="2.43e-05">
+<sequence>AGCATATGCT</sequence>
+<mem:qvalue>0.907</mem:qvalue>
+</matched-element>
+<matched-element start="9827026" stop="9827035" score="12.5361" pvalue="2.43e-05">
+<sequence>AGCATATGCT</sequence>
+<mem:qvalue>0.907</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr21" name="range=chr21">
+</scanned-sequence>
+<scanned-sequence accession="range=chr21" name="range=chr21">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chrUn_gl000220" name="range=chrUn_gl000220">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

@@ -1,0 +1,1477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<pattern-file>dreme_out/dreme.xml</pattern-file>
+<sequence-file>./sequences.fa</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="CGGAAGY" name="CGGAAGY">
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="1342716" stop="1342710" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="16302621" stop="16302615" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="24117612" stop="24117606" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="24117645" stop="24117651" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="62190823" stop="62190817" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="114472149" stop="114472143" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="149899720" stop="149899714" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="151372016" stop="151372010" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="156163765" stop="156163771" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="161015767" stop="161015773" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="161015823" stop="161015817" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="161123762" stop="161123756" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="161172138" stop="161172132" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="174968806" stop="174968800" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+<matched-element start="224301780" stop="224301786" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr1" name="range=chr1">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+<matched-element start="74682139" stop="74682145" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+<matched-element start="113341948" stop="113341942" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="113342013" stop="113342019" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+<matched-element start="131100434" stop="131100440" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+<matched-element start="183989075" stop="183989081" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr2" name="range=chr2">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+<matched-element start="15419845" stop="15419839" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+<matched-element start="179322464" stop="179322458" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr3" name="range=chr3">
+</scanned-sequence>
+<scanned-sequence accession="range=chr4" name="range=chr4">
+</scanned-sequence>
+<scanned-sequence accession="range=chr4" name="range=chr4">
+</scanned-sequence>
+<scanned-sequence accession="range=chr4" name="range=chr4">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+<matched-element start="79287088" stop="79287094" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+<matched-element start="139944339" stop="139944345" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr5" name="range=chr5">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+<matched-element start="28193011" stop="28193017" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+<matched-element start="33239472" stop="33239466" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+<matched-element start="99873205" stop="99873211" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+</scanned-sequence>
+<scanned-sequence accession="range=chr6" name="range=chr6">
+<matched-element start="111303205" stop="111303211" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+<matched-element start="5553441" stop="5553435" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="5553464" stop="5553458" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+<matched-element start="100861290" stop="100861296" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="100861397" stop="100861403" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+<matched-element start="127983956" stop="127983962" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+<matched-element start="129691260" stop="129691254" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr7" name="range=chr7">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+<matched-element start="22102607" stop="22102601" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="22102654" stop="22102648" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+<matched-element start="27630173" stop="27630167" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr8" name="range=chr8">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+<matched-element start="115819076" stop="115819082" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+<matched-element start="131084720" stop="131084726" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+<matched-element start="131644275" stop="131644269" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="131644397" stop="131644391" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+<matched-element start="132565405" stop="132565411" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+</scanned-sequence>
+<scanned-sequence accession="range=chr9" name="range=chr9">
+<matched-element start="139305086" stop="139305092" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+<matched-element start="47092372" stop="47092378" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+<matched-element start="47696170" stop="47696164" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+<matched-element start="103401489" stop="103401483" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrX" name="range=chrX">
+</scanned-sequence>
+<scanned-sequence accession="range=chrY" name="range=chrY">
+</scanned-sequence>
+<scanned-sequence accession="range=chrY" name="range=chrY">
+</scanned-sequence>
+<scanned-sequence accession="range=chrY" name="range=chrY">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+<matched-element start="75504107" stop="75504101" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+<matched-element start="97849996" stop="97850002" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+<matched-element start="104503371" stop="104503365" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+<matched-element start="121652203" stop="121652209" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr10" name="range=chr10">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+<matched-element start="47270430" stop="47270436" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+<matched-element start="47600570" stop="47600564" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+<matched-element start="64037615" stop="64037609" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+<matched-element start="67250595" stop="67250601" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr11" name="range=chr11">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+<matched-element start="7080073" stop="7080067" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+<matched-element start="50419475" stop="50419481" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+<matched-element start="114404171" stop="114404177" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+<matched-element start="133464373" stop="133464379" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="133464431" stop="133464425" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr12" name="range=chr12">
+</scanned-sequence>
+<scanned-sequence accession="range=chr13" name="range=chr13">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+<matched-element start="23299096" stop="23299090" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+<matched-element start="69658196" stop="69658202" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr14" name="range=chr14">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+<matched-element start="34394207" stop="34394213" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="34394218" stop="34394224" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+<matched-element start="40675120" stop="40675114" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="40675130" stop="40675136" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+</scanned-sequence>
+<scanned-sequence accession="range=chr15" name="range=chr15">
+<matched-element start="102192588" stop="102192582" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+<matched-element start="699304" stop="699310" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="699316" stop="699322" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+<matched-element start="1823149" stop="1823155" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+<matched-element start="2097970" stop="2097976" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+<matched-element start="2918197" stop="2918203" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="2918253" stop="2918247" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr16" name="range=chr16">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+<matched-element start="7475918" stop="7475912" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+<matched-element start="7487397" stop="7487403" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="7487419" stop="7487425" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+<matched-element start="13972803" stop="13972809" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+<matched-element start="18684580" stop="18684586" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr17" name="range=chr17">
+</scanned-sequence>
+<scanned-sequence accession="range=chr18" name="range=chr18">
+</scanned-sequence>
+<scanned-sequence accession="range=chr18" name="range=chr18">
+</scanned-sequence>
+<scanned-sequence accession="range=chr18" name="range=chr18">
+<matched-element start="55289174" stop="55289168" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="10426579" stop="10426585" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="11039403" stop="11039397" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="11546424" stop="11546430" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="16296106" stop="16296112" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="17326089" stop="17326083" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="17326163" stop="17326157" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="19627016" stop="19627010" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="19627025" stop="19627031" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="19774524" stop="19774518" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="19774538" stop="19774532" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="36236337" stop="36236331" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="38826413" stop="38826419" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="38865199" stop="38865193" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="44507106" stop="44507100" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="44711548" stop="44711554" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+<matched-element start="44711646" stop="44711640" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="48759216" stop="48759210" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+<matched-element start="58281017" stop="58281011" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr19" name="range=chr19">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+<matched-element start="2644901" stop="2644895" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+<matched-element start="40322234" stop="40322228" score="13.2875" pvalue="6.36e-05">
+<sequence>CGGAAGT</sequence>
+<mem:qvalue>0.127</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr20" name="range=chr20">
+</scanned-sequence>
+<scanned-sequence accession="range=chr21" name="range=chr21">
+</scanned-sequence>
+<scanned-sequence accession="range=chr21" name="range=chr21">
+</scanned-sequence>
+<scanned-sequence accession="range=chr21" name="range=chr21">
+</scanned-sequence>
+<scanned-sequence accession="range=chr21" name="range=chr21">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chr22" name="range=chr22">
+</scanned-sequence>
+<scanned-sequence accession="range=chrUn_gl000220" name="range=chrUn_gl000220">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

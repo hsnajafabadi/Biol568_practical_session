@@ -1,0 +1,90 @@
+# WARNING: this file is not sorted!
+# db	id                         alt	 E-value	adj_p-value	log_adj_p-value	bin_location	bin_width	total_width	sites_in_bin	total_sites	p_success	 p-value	mult_tests
+   1	1                         MEME	2.1e-075	   1.5e-078	        -179.21	         0.0	       47	        187	         318	        477	  0.25134	1.6e-080	        93
+   1	3                         MEME	2.1e-050	   1.4e-053	        -121.68	         0.0	       73	        187	         288	        363	  0.39037	1.5e-055	        93
+   2	ATGGCB                   DREME	7.2e-059	   5.0e-062	        -141.15	         0.0	       52	        196	         300	        471	  0.26531	5.2e-064	        97
+   2	AASATGG                  DREME	3.0e-049	   2.1e-052	        -119.00	         0.0	       51	        195	         218	        322	  0.26154	2.1e-054	        97
+   3	Atoh1_DBD            Atoh1_DBD	2.2e-004	   1.5e-007	         -15.70	         0.0	       32	        192	          63	        179	  0.16667	1.6e-009	        95
+   3	E2F1_DBD_3          E2F1_DBD_3	1.7e0000	   1.1e-003	          -6.77	         0.0	       30	        188	          45	        150	  0.15957	1.2e-005	        93
+   3	GCM1_DBD              GCM1_DBD	3.7e0000	   2.6e-003	          -5.96	         0.0	       80	        192	          89	        153	  0.41667	2.7e-005	        95
+   3	GCM1_full_1        GCM1_full_1	8.3e-001	   5.8e-004	          -7.46	         0.0	       32	        186	          29	         74	  0.17204	6.3e-006	        92
+   3	GCM2_DBD              GCM2_DBD	9.1e0000	   6.3e-003	          -5.07	         0.0	       36	        192	          69	        237	  0.18750	6.6e-005	        95
+   3	GMEB2_DBD_3        GMEB2_DBD_3	7.2e0000	   5.0e-003	          -5.31	         0.0	       91	        187	          37	         48	  0.48663	5.3e-005	        93
+   3	NEUROD2_full      NEUROD2_full	3.5e-008	   2.4e-011	         -24.45	         0.0	       50	        192	         123	        261	  0.26042	2.5e-013	        95
+   3	OLIG3_DBD            OLIG3_DBD	8.1e-002	   5.6e-005	          -9.79	         0.0	       32	        192	          57	        180	  0.16667	5.9e-007	        95
+   3	TFAP2C_full_2    TFAP2C_full_2	6.0e-003	   4.2e-006	         -12.39	         0.0	       55	        189	          63	        119	  0.29101	4.4e-008	        94
+   3	YY1_full              YY1_full	4.3e-070	   3.0e-073	        -167.00	         0.0	       49	        191	         321	        494	  0.25654	3.1e-075	        95
+   3	YY2_DBD                YY2_DBD	1.8e-060	   1.2e-063	        -144.86	         0.0	       51	        191	         304	        471	  0.26702	1.3e-065	        95
+   3	YY2_full_1          YY2_full_1	1.5e-074	   1.0e-077	        -177.29	         0.0	       49	        191	         328	        496	  0.25654	1.1e-079	        95
+   3	YY2_full_2          YY2_full_2	9.3e-037	   6.5e-040	         -90.24	         0.0	       56	        190	         224	        346	  0.29474	6.9e-042	        94
+   4	MA0091.1            TAL1::TCF3	1.9e-001	   1.3e-004	          -8.94	         0.0	       38	        190	          40	         98	  0.20000	1.4e-006	        94
+   4	MA0139.1                  CTCF	1.5e-001	   1.0e-004	          -9.16	         0.0	       49	        183	          59	        126	  0.26776	1.2e-006	        91
+   4	MA0062.2                 GABPA	3.2e0000	   2.2e-003	          -6.12	         0.0	      149	        191	         248	        283	  0.78010	2.3e-005	        95
+   4	MA0095.2                   YY1	1.6e-071	   1.1e-074	        -170.30	         0.0	       54	        190	         316	        446	  0.28421	1.2e-076	        94
+   4	MA0597.1                 THAP1	2.6e-003	   1.8e-006	         -13.23	         0.0	      121	        193	         364	        488	  0.62694	1.9e-008	        96
+   5	UP00001_1         E2F2_primary	5.7e0000	   3.9e-003	          -5.54	         0.0	       27	        187	          56	        229	  0.14439	4.2e-005	        93
+   5	UP00003_1         E2F3_primary	4.1e0000	   2.9e-003	          -5.85	         0.0	       29	        187	          55	        207	  0.15508	3.1e-005	        93
+   5	UP00088_1       Plagl1_primary	1.6e-003	   1.1e-006	         -13.69	         0.0	       52	        186	          95	        204	  0.27957	1.2e-008	        92
+   5	UP00001_2       E2F2_secondary	2.2e-001	   1.6e-004	          -8.77	         0.0	       61	        185	         161	        358	  0.32973	1.7e-006	        92
+   5	UP00000_2      Smad3_secondary	4.7e-003	   3.3e-006	         -12.64	         0.0	       29	        185	         113	        439	  0.15676	3.5e-008	        92
+   5	UP00046_2     Tcfe2a_secondary	6.0e-016	   4.2e-019	         -42.33	         0.0	       47	        185	         164	        330	  0.25405	4.5e-021	        92
+##
+# Detailed descriptions of columns in this file:
+#
+# db:	The name of the database (file name) that contains the motif.
+# id:	A name for the motif that is unique in the motif database file.
+# alt:	An alternate name of the motif that may be provided 
+#	in the motif database file.
+# E-value:	The expected number motifs that would have least one 
+#	region as enriched for best matches to the motif as the reported region.
+#	The E-value is the p-value multiplied by the number of motifs in the
+#	input database(s).
+# adj_p-value:	The probability that any tested region would be as enriched for
+#	best matches to this motif as the reported region is.
+#	By default the p-value is calculated by using the one-tailed binomial
+#	test on the number of sequences with a match to the motif 
+#	that have their best match in the reported region, corrected for
+#	the number of regions and score thresholds tested.
+#	The test assumes that the probability that the best match in a sequence
+#	falls in the region is the region width divided by the
+#	number of places a motif
+#	can align in the sequence (sequence length minus motif width plus 1).
+#	When CentriMo is run in discriminative mode with a negative
+#	set of sequences, the p-value of a region is calculated
+#	using the Fisher exact test on the 
+#	enrichment of best matches in the positive sequences relative
+#	to the negative sequences, corrected
+#	for the number of regions and score thresholds tested.
+#	The test assumes that the probability that the best match (if any)
+#	falls into a given region
+#	is the same for all positive and negative sequences.
+# log_adj_p-value:	Log of adjusted p-value.
+# bin_location:	Location of the center of the most enriched region.
+# bin_width:	The width (in sequence positions) of the most enriched region.
+#	A best match to the motif is counted as being in the region if the
+#	center of the motif falls in the region.
+# total_width:	The window maximal size which can be reached for this motif:
+#		rounded(sequence length - motif length +1)/2
+# sites_in_bin:	The number of (positive) sequences whose best match to the motif
+#	falls in the reported region.
+#	Note: This number may be less than the number of
+#	(positive) sequences that have a best match in the region.
+#	The reason for this is that a sequence may have many matches that score
+#	equally best.
+#	If n matches have the best score in a sequence, 1/n is added to the
+#	appropriate bin for each match.
+# total_sites:	The number of sequences containing a match to the motif
+#	above the score threshold.
+# p_success:	The probability of falling in the enriched window:
+#		bin width / total width
+# p-value:	The uncorrected p-value before it gets adjusted to the
+#	number of multiple tests to give the adjusted p-value.
+# mult_tests:	This is the number of multiple tests (n) done for this motif.
+#	It was used to correct the original p-value of a region for
+#	multiple tests using the formula:
+#		p' = 1 - (1-p)^n where p is the uncorrected p-value.
+#	The number of multiple tests is the number of regions
+#	considered times the number of score thresholds considered.
+#	It depends on the motif length, sequence length, and the type of
+#	optimizations being done (central enrichment, local enrichment,
+#	score optimization).

@@ -1,0 +1,14 @@
+##gff-version 3
+range=chr1	fimo	nucleotide_motif	10535118	10535127	40.8	-	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr1;pvalue=8.32e-05;qvalue= 1;sequence=GCCGTATGCT;
+range=chr1	fimo	nucleotide_motif	45965879	45965888	41.5	-	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr1;pvalue=7.03e-05;qvalue= 1;sequence=ACCATATTGC;
+range=chr2	fimo	nucleotide_motif	75873858	75873867	55.8	+	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr2;pvalue=2.62e-06;qvalue= 0.432;sequence=GCCATATGGT;
+range=chr2	fimo	nucleotide_motif	75873858	75873867	53.4	-	.	Name=NEUROD2_full;ID=NEUROD2_full-2-range=chr2;pvalue=4.51e-06;qvalue= 0.432;sequence=ACCATATGGC;
+range=chr5	fimo	nucleotide_motif	137514221	137514230	46.1	-	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr5;pvalue=2.45e-05;qvalue= 0.907;sequence=ACCATATTTT;
+range=chr6	fimo	nucleotide_motif	33290781	33290790	43.7	+	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr6;pvalue=4.26e-05;qvalue= 0.907;sequence=GCCATATTGT;
+range=chrX	fimo	nucleotide_motif	73071117	73071126	43.7	+	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chrX;pvalue=4.26e-05;qvalue= 0.907;sequence=GCCATATTGT;
+range=chr14	fimo	nucleotide_motif	100706245	100706254	41.6	-	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr14;pvalue=6.89e-05;qvalue= 1;sequence=ACCACATGGT;
+range=chr16	fimo	nucleotide_motif	30583216	30583225	44.6	-	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr16;pvalue=3.47e-05;qvalue= 0.907;sequence=GCCATATTTT;
+range=chr17	fimo	nucleotide_motif	78518644	78518653	40.5	-	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr17;pvalue=8.93e-05;qvalue= 1;sequence=GCCATATTGC;
+range=chr20	fimo	nucleotide_motif	3762081	3762090	43.7	+	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr20;pvalue=4.26e-05;qvalue= 0.907;sequence=GCCATATTGT;
+range=chr21	fimo	nucleotide_motif	9827026	9827035	46.1	-	.	Name=NEUROD2_full;ID=NEUROD2_full-1-range=chr21;pvalue=2.43e-05;qvalue= 0.907;sequence=AGCATATGCT;
+range=chr21	fimo	nucleotide_motif	9827026	9827035	46.1	+	.	Name=NEUROD2_full;ID=NEUROD2_full-2-range=chr21;pvalue=2.43e-05;qvalue= 0.907;sequence=AGCATATGCT;

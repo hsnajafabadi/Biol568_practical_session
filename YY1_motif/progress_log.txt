@@ -1,0 +1,110 @@
+Invoking:
+  getsize ./sequences.fa 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.024679
+Invoking:
+  fasta-most -min 50 < ./sequences.fa 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.112607
+Invoking:
+  fasta-center -dna -len 100 < ./sequences.fa 1> ./seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.143377
+Invoking:
+  fasta-shuffle-letters ./seqs-centered ./seqs-shuffled -kmer 2 -tag -dinuc -dna -seed 1
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 0.022208
+Invoking:
+  fasta-get-markov -nostatus -nosummary -dna -m 1 ./sequences.fa ./background
+Finished invoke:
+  name: bg  status: 0  time: 0.020354
+Invoking:
+  meme ./seqs-centered -oc meme_out -mod zoops -nmotifs 3 -minw 6 -maxw 30 -bfile ./background -dna -time 5082 -revcomp -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 840.294577
+Invoking:
+  dreme -v 1 -oc dreme_out -png -dna -p ./seqs-centered -n ./seqs-shuffled -t 6803 -e 0.05
+Finished invoke:
+  name: dreme  status: 0  time: 58.400186
+Invoking:
+  centrimo -seqlen 201 -verbosity 1 -oc centrimo_out -bfile ./background -score 5.0 -ethresh 10.0 ./sequences.fa meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: centrimo  status: 0  time: 14.60479
+Invoking:
+  tomtom -verbosity 1 -oc meme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc -bfile ./background meme_out/meme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: meme_tomtom  status: 0  time: 27.395514
+Invoking:
+  tomtom -verbosity 1 -oc dreme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc -bfile ./background dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: dreme_tomtom  status: 0  time: 5.739737
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 ./combined.meme ./combined.meme 1> ./motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 1.236456
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_1 -bgfile ./background -primary 1 ./sequences.fa meme_out/meme.xml meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: spamo1  status: 0  time: 3.008648
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_2 -bgfile ./background -primary 2 ./sequences.fa meme_out/meme.xml meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: spamo2  status: 0  time: 3.044615
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_3 -bgfile ./background -primary CGGAAGY ./sequences.fa dreme_out/dreme.xml meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: spamo3  status: 0  time: 2.641527
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_4 -bgfile ./background -primary NEUROD2_full ./sequences.fa db/EUKARYOTE/jolma2013.meme meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: spamo4  status: 0  time: 3.2394
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_5 -bgfile ./background -primary UP00088_1 ./sequences.fa db/MOUSE/uniprobe_mouse.meme meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: spamo5  status: 0  time: 3.226125
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_6 -bgfile ./background -primary MA0597.1 ./sequences.fa db/JASPAR/JASPAR_CORE_2014_vertebrates.meme meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: spamo6  status: 0  time: 2.853345
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_7 -bgfile ./background -primary ACGTSA ./sequences.fa dreme_out/dreme.xml meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: spamo7  status: 0  time: 2.753892
+Invoking:
+  spamo -verbosity 1 -oc spamo_out_8 -bgfile ./background -primary CYCCGCC ./sequences.fa dreme_out/dreme.xml meme_out/meme.xml dreme_out/dreme.xml db/EUKARYOTE/jolma2013.meme db/JASPAR/JASPAR_CORE_2014_vertebrates.meme db/MOUSE/uniprobe_mouse.meme
+Finished invoke:
+  name: spamo8  status: 0  time: 2.615651
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_1 --bgfile ./background --motif 1 meme_out/meme.xml ./sequences.fa
+Finished invoke:
+  name: fimo1  status: 0  time: 0.334714
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_2 --bgfile ./background --motif 2 meme_out/meme.xml ./sequences.fa
+Finished invoke:
+  name: fimo2  status: 0  time: 0.335006
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_3 --bgfile ./background --motif CGGAAGY dreme_out/dreme.xml ./sequences.fa
+Finished invoke:
+  name: fimo3  status: 0  time: 0.142166
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_4 --bgfile ./background --motif NEUROD2_full db/EUKARYOTE/jolma2013.meme ./sequences.fa
+Finished invoke:
+  name: fimo4  status: 0  time: 0.707249
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_5 --bgfile ./background --motif UP00088_1 db/MOUSE/uniprobe_mouse.meme ./sequences.fa
+Finished invoke:
+  name: fimo5  status: 0  time: 0.702178
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_6 --bgfile ./background --motif MA0597.1 db/JASPAR/JASPAR_CORE_2014_vertebrates.meme ./sequences.fa
+Finished invoke:
+  name: fimo6  status: 0  time: 0.234336
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_7 --bgfile ./background --motif ACGTSA dreme_out/dreme.xml ./sequences.fa
+Finished invoke:
+  name: fimo7  status: 0  time: 0.103206
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc fimo_out_8 --bgfile ./background --motif CYCCGCC dreme_out/dreme.xml ./sequences.fa
+Finished invoke:
+  name: fimo8  status: 0  time: 0.104987
+Writing output
+Done
